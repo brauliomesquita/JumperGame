@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 773c54dffd8aca849b48c046836953fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boundsTop: 100
+  platform: {fileID: 0}
   boundsBottom: 0
   movementFromBase: {x: 0, y: 0}
   baseLocation: {x: 0, y: 0}

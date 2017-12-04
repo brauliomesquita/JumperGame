@@ -108,6 +108,11 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &516453591 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1724783976421306, guid: 771a62a7fc6c8ab4eba6f3daf858b19e,
+    type: 2}
+  m_PrefabInternal: {fileID: 588948261}
 --- !u!1001 &588948261
 Prefab:
   m_ObjectHideFlags: 0
@@ -188,10 +193,6 @@ Prefab:
     - target: {fileID: 4194304656483904, guid: 23679f339eacb1e4eb69254709290f45, type: 2}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1630107829924458, guid: 23679f339eacb1e4eb69254709290f45, type: 2}
-      propertyPath: m_TagString
-      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 23679f339eacb1e4eb69254709290f45, type: 2}
@@ -309,28 +310,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 771a62a7fc6c8ab4eba6f3daf858b19e, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1336830478 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1669943837809506, guid: a39911bb33289ab479b4ad50ad97e667,
-    type: 2}
-  m_PrefabInternal: {fileID: 1536425437}
---- !u!68 &1336830485
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1336830478}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -1.3327823, y: 1.9986771}
-  - {x: -1.3460004, y: -1.984797}
 --- !u!1001 &1536425437
 Prefab:
   m_ObjectHideFlags: 0
@@ -370,21 +349,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 20588672769388208, guid: a39911bb33289ab479b4ad50ad97e667,
-        type: 2}
-      propertyPath: orthographic size
-      value: 2.0016787
-      objectReference: {fileID: 0}
     - target: {fileID: 114366669230001480, guid: a39911bb33289ab479b4ad50ad97e667,
         type: 2}
-      propertyPath: boundsTop
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 114366669230001480, guid: a39911bb33289ab479b4ad50ad97e667,
-        type: 2}
-      propertyPath: boundsRight
-      value: 0
-      objectReference: {fileID: 0}
+      propertyPath: platform
+      value: 
+      objectReference: {fileID: 516453591}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a39911bb33289ab479b4ad50ad97e667, type: 2}
   m_IsPrefabParent: 0
@@ -401,7 +370,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4586162476028146, guid: 771a62a7fc6c8ab4eba6f3daf858b19e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.71
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4586162476028146, guid: 771a62a7fc6c8ab4eba6f3daf858b19e, type: 2}
       propertyPath: m_LocalPosition.z
