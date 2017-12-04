@@ -17,11 +17,11 @@ public class CameraFollower2D : MonoBehaviour {
 	}
 	
 	void Update () {
-		transform.position = new Vector3 (transform.position.x, Mathf.Max(target.position.y, boundsBottom), transform.position.z);
+		/*transform.position = new Vector3 (transform.position.x, Mathf.Max(target.position.y, boundsBottom), transform.position.z);
 		movementFromBase = new Vector2 (transform.position.x - baseLocation.x, transform.position.y - baseLocation.y);
 		
 		if(boundsBottom != transform.position.y){
 			boundsBottom = transform.position.y;
-		}
+		}*/
 	}
 }
