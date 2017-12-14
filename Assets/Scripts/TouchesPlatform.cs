@@ -1,36 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TouchesPlatform : MonoBehaviour {
 
-	public bool touched = false;
+	public bool counted = false;
 
 	void OnCollisionEnter2D(Collision2D target){
-		
-		Debug.Log (target.otherCollider.gameObject.transform.position.y);
-		if(!touched){
-			var platforms = GameObject.FindGameObjectsWithTag ("Platform");
 
-			foreach(var p in platforms){
-				if(p.gameObject.GetInstanceID() == target.otherCollider.gameObject.GetInstanceID())
-					continue;
-
-				Debug.Log ("target.otherCollider.gameObject.transform.position.y: " + target.otherCollider.gameObject.transform.position.y);
-				Debug.Log ("p.transform.position.y: " + p.transform.position.y);
-
-				if(p.transform.position.y < target.otherCollider.gameObject.transform.position.y){
-					var newX = Random.Range (1000, 2258) / 1000.0f;
-					var newY = p.transform.position.y + 4.5f;
-					p.transform.position = new Vector3 (newX, newY, 0.0f);
-					p.GetComponent<TouchesPlatform> ().touched = false;
-				}
+		if (target.gameObject.tag == "Player") {
+			if (!counted) {
+				//if (target.gameObject.GetComponent<Rigidbody2D> ().velocity.y <= 0.01) {
+					GameObject.FindWithTag ("MainCamera").GetComponent<CameraFollower2D> ().platformCounter++;
+				//}
 			}
 
-			// Contador
+			counted = true;
 		}
-		
-		touched = true;
 	}
 
 }
